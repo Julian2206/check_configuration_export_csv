@@ -18,7 +18,7 @@ This project is a modular PowerShell script that automatically analyzes and veri
 ```
 check_configuration_ps1/
 │
-├── config.json                 # Configuration for services and expected computer name
+├── config.json                # Configuration for services and expected computer name
 ├── check_configuration.ps1    # Main script
 ├── NetworkConfig.psm1         # Network and IP module
 ├── HardwareData.psm1          # Hardware and storage module
