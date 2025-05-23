@@ -40,11 +40,20 @@ Lo script genera nella cartella corrente:
 - Permessi da amministratore (per alcune verifiche)
 - I moduli `.psm1` devono essere presenti nella stessa directory
 
+## Permessi richiesti
+
+Per eseguire questo script, è necessario impostare l'execution policy a `Bypass` (solo per la sessione corrente):
+
+````powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\check_configuration.ps1
+
+
 ## Esecuzione
 
 ```powershell
 .\check_configuration.ps1
-```
+````
 
 ## Note
 
