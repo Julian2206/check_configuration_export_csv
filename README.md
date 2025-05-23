@@ -1,65 +1,71 @@
-# System Configuration Checker (PowerShell)
+# 🛡️ System Configuration Checker (PowerShell)
 
-Questo progetto è uno script PowerShell modulare che analizza e verifica automaticamente lo stato di configurazione di un sistema Windows, generando un **report dettagliato** in formato `.txt` e `.csv`.
+This project is a modular PowerShell script that automatically analyzes and verifies the configuration state of a Windows system, generating a **detailed report** in both `.txt` and `.csv` formats.
 
-## Funzionalità principali
+## 📋 Key Features
 
-- Verifica nome computer e policy di esecuzione
-- Controllo porte USB disabilitate
-- Informazioni su BIOS, OS, licenza Windows
-- Dati hardware e rete (IP, partizioni, RAM, CPU, driver, software installati)
-- Stato del firewall e regole attive
-- Controllo sincronizzazione oraria NTP
-- Verifica servizi da abilitare/disabilitare secondo file `config.json`
-- Rileva utenti locali, policy mancanti e controlli manuali
+- Checks computer name and execution policy
+- Detects if USB ports are disabled
+- Retrieves BIOS, OS, and Windows license information
+- Collects hardware and network data (IP, partitions, RAM, CPU, drivers, installed software)
+- Verifies firewall status and active rules
+- Checks NTP time synchronization
+- Verifies enabled/disabled services based on `config.json`
+- Detects local users, missing policies, and items requiring manual review
 
-## Struttura del progetto
+## 📁 Project Structure
 
 ```
 check_configuration_ps1/
 │
-├── config.json                # Configurazione servizi e computer name
-├── check_configuration.ps1    # Script principale
-├── NetworkConfig.psm1         # Modulo: rete e IP
-├── HardwareData.psm1          # Modulo: hardware e storage
-├── Services.psm1              # Modulo: servizi da attivare/disattivare
-├── Security.psm1              # Modulo: USB, firewall, logging
-├── RegionalSettings.psm1      # Modulo: lingua, fuso orario, NTP
+├── config.json                 # Configuration for services and expected computer name
+├── check_configuration.ps1    # Main script
+├── NetworkConfig.psm1         # Network and IP module
+├── HardwareData.psm1          # Hardware and storage module
+├── Services.psm1              # Module for enabling/disabling services
+├── Security.psm1              # USB, firewall, and logging module
+├── RegionalSettings.psm1      # Locale, timezone, and NTP module
 ```
 
-## Output generato
+## 📦 Output
 
-Lo script genera nella cartella corrente:
+The script generates the following files in the current directory:
 
-- `nomecomputer.txt` – Report testuale completo
-- `nomecomputer.csv` – Report tabellare per analisi o importazione
+- `computername.txt` – Full text report
+- `computername.csv` – Structured report for analysis or import
 
-## Requisiti
+## 🛠️ Requirements
 
-- PowerShell 5.1+ su Windows 10
-- Permessi da amministratore (per alcune verifiche)
-- I moduli `.psm1` devono essere presenti nella stessa directory
+- PowerShell 5.1+ on Windows 10
+- Administrator privileges (for some checks)
+- All `.psm1` modules must be in the same directory as the main script
 
-## Permessi richiesti
+## ⚠️ Required Permissions
 
-Per eseguire questo script, è necessario impostare l'execution policy a `Bypass` (solo per la sessione corrente):
+To run the script, you need to set the execution policy to `Bypass` for the current session:
 
-````powershell
+```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\check_configuration.ps1
+```
 
+Or run it in one line:
 
-## Esecuzione
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\check_configuration.ps1
+```
+
+## ▶️ Running the Script
 
 ```powershell
 .\check_configuration.ps1
-````
+```
 
-## Note
+## 📌 Notes
 
-- Alcuni controlli sono evidenziati per **verifica manuale**.
-- Lo script è pensato per analisi di sicurezza/configurazione in ambito sistemistico o audit.
+- Some checks are marked for **manual review**.
+- This script is designed for system configuration and security audits in IT and sysadmin environments.
 
-## Licenza
+## 📄 License
 
-Questo progetto è distribuito sotto licenza MIT.
+This project is licensed under the MIT License.
