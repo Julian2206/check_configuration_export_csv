@@ -1,0 +1,165 @@
+{
+  "appsToRemove": [
+    {
+      "name": "wheater"
+    },
+    {
+      "name": "news"
+    },
+    {
+      "name": "disney"
+    },
+    {
+      "name": "hulu"
+    },
+    {
+      "name": "candy"
+    },
+    {
+      "name": "netflix"
+    },
+    {
+      "name": "3dbuilder"
+    },
+    {
+      "name": "windowscommunicationsapps"
+    },
+    {
+      "name": "windowscamera"
+    },
+    {
+      "name": "officehub"
+    },
+    {
+      "name": "skypeapp"
+    },
+    {
+      "name": "zunemusic"
+    },
+    {
+      "name": "windowsmaps*"
+    },
+    {
+      "name": "solitairecollection"
+    },
+    {
+      "name": "bingfinance"
+    },
+    {
+      "name": "bingnews"
+    },
+    {
+      "name": "onenote"
+    },
+    {
+      "name": "windowsphone"
+    },
+    {
+      "name": "windowsstore"
+    },
+    {
+      "name": "onenote"
+    },
+    {
+      "name": "bingsports"
+    },
+    {
+      "name": "soundrecorder"
+    },
+    {
+      "name": "bingweather"
+    },
+    {
+      "name": "xbox"
+    },
+    {
+      "name": "farmhero"
+    },
+    {
+      "name": "stickynotes"
+    },
+    {
+      "name": "yourphone"
+    },
+    {
+      "name": "spotify"
+    }
+  ],
+  "servicesToEnable": [
+    {
+      "name": "Dnscache"
+    },
+    {
+      "name": "W32Time"
+    },
+    {
+      "name": "upnphost"
+    },
+    {
+      "name": "SSDPSRV"
+    },
+    {
+      "name": "browser"
+    }
+  ],
+  "servicesToDisable": [
+  {"name": "XblGameSaveTask"},
+  {"name": "Xbox Accessory Management Service"},
+  {"name": "Xbox Live Auth Manager"},
+  {"name": "Xbox Live Game Save"},
+  {"name": "Xbox Live Networking Service"},
+  {"name": "bthserv"},
+  {"name": "Fax"},
+  {"name": "AJRouter"},
+  {"name": "PeerDistSvc"},
+  {"name": "TrkWks"},
+  {"name": "MapsBroker"},
+  {"name": "fdPHost"},
+  {"name": "FDResPub"},
+  {"name": "lfsvc"},
+  {"name": "SharedAccess"},
+  {"name": "iphlpsvc"},
+  {"name": "MSiSCSI"},
+  {"name": "SmsRouter"},
+  {"name": "diagnosticshub.standardcollector.service"},
+  {"name": "NetTcpPortSharing"},
+  {"name": "NcdAutoSetup"},
+  {"name": "CscService"},
+  {"name": "PhoneSvc"},
+  {"name": "PNRPAutoReg"},
+  {"name": "WPDBusEnum"},
+  {"name": "PcaSvc"},
+  {"name": "QWAVE"},
+  {"name": "RetailDemo"},
+  {"name": "seclogon"},
+  {"name": "DiagTrack"},
+  {"name": "DPS"},
+  {"name": "WdiServiceHost"},
+  {"name": "WdiSystemHost"},
+  {"name": "SensorDataService"},
+  {"name": "SensrSvc"},
+  {"name": "SensorService"},
+  {"name": "ShellHWDetection"},
+  {"name": "SCardSvr"},
+  {"name": "SCPolicySvc"},
+  {"name": "ScDeviceEnum"},
+  {"name": "FrameServer"},
+  {"name": "wcncsvc"},
+  {"name": "stisvc"},
+  {"name": "icssvc"},
+  {"name": "WinRM"},
+  {"name": "WSearch"},
+  {"name": "WlanSvc"},
+  {"name": "WwanSvc"},
+  {"name": "RemoteRegistry"},
+  {"name": "PolicyAgent"},
+  {"name": "XblAuthManager"},
+  {"name": "XblGameSave"},
+  {"name": "Themes"},
+  {"name": "TermService"}
+  ],
+  "ntpServerIp": ["time.feralpigroup.local"],
+  "dnsServers": ["10.1.10.3","10.1.10.4"],
+  "computerName": "FERC5561",
+  "timeZone": "W. Europe Standard Time"
+}
